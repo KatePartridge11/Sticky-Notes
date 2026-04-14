@@ -10,7 +10,6 @@ def note_list(request):
     """
     notes = Note.objects.all()
     context = {"notes": notes, "page_title": "My Sticky Notes"}
-    # Renders the HTML template and passes the data (context) to it
     return render(request, "notes/note_list.html", context)
 
 
