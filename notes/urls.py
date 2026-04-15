@@ -1,5 +1,11 @@
 from django.urls import path
-from .views import note_list, note_detail, note_create, note_update, note_delete
+from .views import (
+    note_list,
+    note_detail,
+    note_create,
+    note_update,
+    note_delete,
+)
 
 urlpatterns = [
     # Homepage of the app (lists all of the notes)
